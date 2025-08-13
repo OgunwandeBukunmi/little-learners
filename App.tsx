@@ -425,10 +425,10 @@ const App = () => {
 
 export default App;
 
-type MyProps = {
+interface MyProps {
   title: string;
   content: string;
-};
+}
 
 
 
