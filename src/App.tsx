@@ -28,6 +28,7 @@ const App = () => {
     setHidden((prev) => !prev);
   }
 
+
   let benefits = [
       {
         image : SchoolCap,
@@ -424,10 +425,14 @@ const App = () => {
 
 export default App;
 
+interface MyProps {
+  title: string;
+  content: string;
+}
 
 
 
-export function Accordion({ title , content } ) {
+export function Accordion({ title , content }  : MyProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
